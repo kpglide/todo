@@ -1,3 +1,7 @@
+.ui-page {
+	background: white;
+}
+
 header {
 	border-bottom: thin;
 	border-color: black;
@@ -6,7 +10,7 @@ header {
 
 .brand {
 	width: 50%;
-	margin: 3% auto 1.5% auto;
+	margin: 2% auto 1.5% auto;
 	text-align: center;
 	font-size: 1.75rem;
 }
@@ -33,6 +37,7 @@ header {
 	width: 60%;
 	margin: 0 auto;
 	padding: 0;
+	background-color: white;
 }
 
 #todo li {
@@ -48,6 +53,21 @@ input {
 	width: 60%;
 	margin: 0 auto;
 	margin-bottom: 1.5em;
+}
+
+input.ui-input-text {
+	background-color: white;
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+	border-radius: 0;
+	box-shadow: 0;
+	text-shadow: 0;
+}
+
+.ui-shadow-inset {
+    box-shadow: none;
 }
 
 @media (max-width: 440px) {

@@ -3,16 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Todo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script type="text/javascript" src='scripts.js'></script>
 	<link href='styles.css' rel='stylesheet'>
 </head>
 <body>
 	<header><div class="brand">TODO | Do Stuff!</div></header>
 	<div id="main-container">
 		<div id="input-container">
-			<input type="text" name="input" value="Type to-do here &amp; press enter">
+			<input type="text" id="todo-input" name="input" value="Type to-do here &amp; press enter">
 		</div>
 		<div id="list-container">
-			<p id="instructions">Swipe left to mark as completed &amp; swipe right to delete</p>
+			<p id="instructions">Swipe left to toggle as completed &amp; swipe right to delete</p>
 			<ul id="todo">
 				<li>Ballet</li>
 				<li>Code</li>
