@@ -1,0 +1,60 @@
+header {
+	border-bottom: thin;
+	border-color: black;
+	border-bottom-style: solid;
+}
+
+.brand {
+	width: 50%;
+	margin: 3% auto 1.5% auto;
+	text-align: center;
+	font-size: 1.75rem;
+}
+
+#main-container {
+	min-height: 60%;
+	width: 70%;
+	margin: 5% auto 0 auto;
+}
+
+#list-container {
+	margin-top: 5%;
+}
+
+#instructions {
+	text-align: center;
+	font-style: oblique;
+	font-size: 100%;
+	color: royalblue;
+}
+
+#todo {
+	list-style: none;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#todo li {
+	margin-top: .1em;
+	padding: .25em 0 .15em 0;
+	border-bottom: thin;
+	border-bottom-style: solid;  
+	text-align: center;
+}
+
+input {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+}
+
+@media (max-width: 440px) {
+	.main-container {
+		width: 95%;
+	}
+	#todo, input {
+		width: 90%;
+	}
+}
