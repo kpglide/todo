@@ -26,7 +26,7 @@ $(document).ready(function() {
         		$('#todo-input').val('Type your to-do here & press enter');
         		$('#instructions').show();
         	}
-        	$('li').on('dblclick', swipeleftHandler);
+        	$('li').on('dblclick', doneHandler);
         	$('li').on('mouseenter', showDelete);
         	$('li').on('mouseleave', hideDelete);
 
@@ -36,11 +36,10 @@ $(document).ready(function() {
     	}
     });
 
-	function swipeleftHandler(event) {
-   		//alert('this works');
-    	if (!$(event.target).hasClass('swipe-left')) {
-	    	$(event.target).addClass('swipe-left');
-	    } else { $(event.target).removeClass('swipe-left'); }
+	function doneHandler(event) {
+    	if (!$(event.target).hasClass('done')) {
+	    	$(event.target).addClass('done');
+	    } else { $(event.target).removeClass('done'); }
     }
 
     function showDelete(event) {
@@ -51,4 +50,5 @@ $(document).ready(function() {
     function hideDelete(event) {
     	$(event.target).children('.x').hide();
     }
+
 });

@@ -1,18 +1,23 @@
-.ui-page {
-	background: white;
+html {
+   	font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 23px;
 }
 
 header {
+	font-family: 'Alegreya', serif;
+	font-weight: 700;
+    line-height: 46px;
+    font-size: 46px;
 	border-bottom: thin;
 	border-color: black;
 	border-bottom-style: solid;
 }
 
 .brand {
-	width: 50%;
+	width: 85%;
 	margin: 2% auto 1.5% auto;
 	text-align: center;
-	font-size: 1.75rem;
 }
 
 #main-container {
@@ -28,7 +33,6 @@ header {
 #instructions {
 	text-align: center;
 	font-style: oblique;
-	font-size: 100%;
 	color: royalblue;
 }
 
@@ -55,22 +59,7 @@ input {
 	margin-bottom: 1.5em;
 }
 
-input.ui-input-text {
-	background-color: white;
-	display: block;
-	width: 60%;
-	margin: 0 auto;
-	margin-bottom: 1.5em;
-	border-radius: 0;
-	box-shadow: 0;
-	text-shadow: 0;
-}
-
-.ui-shadow-inset {
-    box-shadow: none;
-}
-
-.swipe-left {
+.done {
 	text-decoration: line-through;
 }
 
@@ -87,5 +76,17 @@ input.ui-input-text {
 	}
 	#todo, input {
 		width: 90%;
+	}
+	header {
+		font-weight: 700;
+    	line-height: 30px;
+    	font-size: 30px;
+	}
+}
+
+@media (min-width: 680px) {
+	input, #main-container, #list-container {
+		margin-top: 20px;
+		margin-bottom: 10px;
 	}
 }
