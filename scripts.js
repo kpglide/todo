@@ -15,7 +15,6 @@ $(document).ready(function() {
 	$('#instructions').hide();
 	
 	$('#todo-input').keyup(function(event) {
-    	$('.instructions').show();
 
     	if (event.which == 13) {
         	new_text = $('#todo-input').val();
@@ -28,13 +27,14 @@ $(document).ready(function() {
         	}
     	}
 
-    $('li').on('dblclick', doneHandler);
-    $('li').on('mouseenter', showDelete);
-    $('li').on('mouseleave', hideDelete);
+    });
 
-    $('.x').click(function() {
+    $('ul').on('dblclick', 'li', doneHandler)
+                .on('mouseenter', 'li', showDelete)
+                .on('mouseleave', 'li', hideDelete);
+
+    $('ul').on('click', '.x', function() {
         $(this).parent().remove();
-            });
     });
 
 	function doneHandler(event) {
