@@ -26,20 +26,21 @@ $(document).ready(function() {
         		$('#todo-input').val('Type your to-do here & press enter');
         		$('#instructions').show();
         	}
-        	$('li').on('dblclick', doneHandler);
-        	$('li').on('mouseenter', showDelete);
-        	$('li').on('mouseleave', hideDelete);
-
-        	$('.x').click(function() {
-        		$(this).parent().remove();
-        	});
     	}
+
+    $('li').on('dblclick', doneHandler);
+    $('li').on('mouseenter', showDelete);
+    $('li').on('mouseleave', hideDelete);
+
+    $('.x').click(function() {
+        $(this).parent().remove();
+            });
     });
 
 	function doneHandler(event) {
     	if (!$(event.target).hasClass('done')) {
-	    	$(event.target).addClass('done');
-	    } else { $(event.target).removeClass('done'); }
+	    	$(this).addClass('done');
+	    } else { $(this).removeClass('done'); }
     }
 
     function showDelete(event) {
